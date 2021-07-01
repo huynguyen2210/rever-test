@@ -1,0 +1,253 @@
+.top-banner {
+    background: url(../images/cover_banner_style_a@1x.jpg) no-repeat;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .4);
+}
+
+header {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.navbar-brand img {
+    width: 44px;
+    height: 44px;
+}
+
+.nav-expand ul {
+    display: flex;
+    list-style-type: none;
+    color: #fff;
+    align-items: center;
+    margin: unset !important
+}
+
+.nav-expand ul li a {
+    color: #fff;
+}
+
+.nav-expand .dropdown-menu {
+    border-radius: 0;
+}
+
+.nav-expand .dropdown-menu a {
+    color: #000;
+}
+
+.phone-before::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f879";
+    margin-right: 5px;
+}
+
+.nav-drop::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f107";
+    margin-left: 5px;
+}
+
+#sign-in::before {
+    content: '';
+    width: 1px;
+    height: 24px;
+    position: absolute;
+    top: 23px;
+    background: rgba(255, 255, 255, .4);
+}
+
+#property-post {
+    border: solid 0.5px #fff;
+}
+
+
+/* .navbar-toggler.collapsed .close-icon,
+.navbar-toggler:not(.collapsed) .toggler-icon {
+    display: none;
+} */
+
+@-webkit-keyframes nav-move {
+    from {
+        right: -300px;
+    }
+    to {
+        right: 0px;
+    }
+}
+
+@keyframes nav-move {
+    from {
+        right: -300px;
+    }
+    to {
+        right: 0px;
+    }
+}
+
+.navbar-collapse {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    color: #000;
+    z-index: 99;
+    padding: 0;
+    animation: nav-move 1.5s;
+    -webkit-animation: nav-move 1.5s;
+    transition: right .3s ease;
+}
+
+.navbar-collapse a {
+    text-decoration: none !important;
+    color: #000;
+}
+
+.navbar-collapse .nav-collapse-header,
+.navbar-collapse .login {
+    padding: 8px 1rem;
+}
+
+.login .sign-in {
+    background-color: #fff;
+    border-color: #000;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+.login .sign-up {
+    background-color: #fff;
+    border-color: #c72628;
+    border-width: 1.5px;
+    border-radius: 5px;
+}
+
+.login .sign-in a {
+    font-weight: 700;
+    color: #000 !important;
+}
+
+.login .sign-up a {
+    font-weight: 700;
+    color: #c72628 !important;
+}
+
+.navbar-collapse .nav-item a {
+    border-bottom: 1px solid rgba(48, 51, 58, .1);
+    margin: 0 1rem;
+}
+
+.navbar-collapse .nav-item span {
+    font-weight: 700;
+}
+
+.navbar-collapse .nav-item .app-install::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f3cd";
+    color: #c72628;
+    float: right;
+}
+
+.navbar-collapse .nav-drop::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f107";
+    color: #c72628;
+    float: right;
+}
+
+.navbar-collapse .dropdown-menu {
+    background-color: #F3F4F7;
+    border: none !important;
+    padding: 0;
+    margin: 0;
+    transition: height .1s ease;
+}
+
+.navbar-collapse .dropdown-item {
+    padding: 1rem 0;
+    border-bottom: none !important;
+}
+
+hr {
+    background: rgba(255, 255, 255, 0.4);
+    margin: 0;
+}
+
+.banner-content {
+    width: 60%;
+    margin: 10% auto 0;
+}
+
+.banner-content h1 {
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+}
+
+.banner-content #prop-sell,
+.banner-content #prop-rent {
+    display: none;
+}
+
+.banner-content label {
+    font-size: 24px;
+    color: #fff;
+    padding-bottom: 10px;
+    margin-left: 5px;
+}
+
+input[type="radio"]:checked+label {
+    font-weight: 600;
+    border-bottom: 1px solid #fff;
+}
+
+.banner-content .input-group .form-control {
+    border-radius: 0;
+    padding: 1rem;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+    background: red;
+    background-color: red !important;
+    border-color: red !important;
+    outline-color: red !important;
+    box-shadow: unset !important;
+    color: #fff;
+    border-radius: 0 !important;
+}
+
+input[type="text"]:hover,
+input[type="text"]:focus,
+input[type="text"]:visited,
+input[type="text"]:active {
+    border-color: unset !important;
+    box-shadow: unset !important;
+}
+
+.banner-content .input-group::placeholder {
+    color: rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (min-width: 993px) {
+    .close-icon,
+    .toggler-icon {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .nav-expand {
+        display: none;
+    }
+}
